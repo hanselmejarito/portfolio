@@ -49,6 +49,7 @@ export const projects: Project[] = [
     tech: ["React", "Tailwind CSS", "Speech Recognition", "PHP", "CodeIgniter"],
     github: "https://github.com/hanselmejarito/transciption",
     featured: true,
+    private: true,
   },
   {
     name: "UAMS — User Access Management",
@@ -57,6 +58,7 @@ export const projects: Project[] = [
     tech: ["PHP", "CodeIgniter", "MySQL", "REST API"],
     github: "https://github.com/hanselmejarito/uams",
     featured: true,
+    private: true,
   },
   {
     name: "CMIS — Case Management System",
@@ -65,6 +67,7 @@ export const projects: Project[] = [
     tech: ["PHP", "CodeIgniter", "MySQL", "Bootstrap"],
     github: "https://github.com/hanselmejarito/cmis-origin",
     featured: true,
+    private: true,
   },
   {
     name: "Printer Management System (PMS)",
@@ -73,6 +76,7 @@ export const projects: Project[] = [
     tech: ["PHP 8", "CodeIgniter 3", "MySQL", "Docker", "SNMP", "Bootstrap"],
     github: "https://github.com/hanselmejarito/pms",
     featured: true,
+    private: true,
   },
   {
     name: "RMM — Remote Monitoring",
@@ -81,6 +85,7 @@ export const projects: Project[] = [
     tech: ["PHP", "CodeIgniter", "Docker", "Bootstrap", "MySQL"],
     github: "https://github.com/hanselmejarito/rmm",
     featured: false,
+    private: true,
   },
   {
     name: "PPA Bug Tracking System",
@@ -89,6 +94,7 @@ export const projects: Project[] = [
     tech: ["PHP", "CodeIgniter", "MySQL", "REST API"],
     github: "https://github.com/hanselmejarito/ppa-bug",
     featured: false,
+    private: true,
   },
   {
     name: "IMS — Inventory Management",
@@ -109,7 +115,9 @@ export const projects: Project[] = [
     description:
       "Government citizen charter web portal for public service transparency — CodeIgniter application with structured content management.",
     tech: ["PHP", "CodeIgniter", "Bootstrap", "MySQL"],
+    github: "https://github.com/hanselmejarito/citizen-charter",
     featured: false,
+    private: true,
   },
   {
     name: "Chrome Industries Storefront",
@@ -118,6 +126,7 @@ export const projects: Project[] = [
     tech: ["Next.js 15", "React 19", "TypeScript", "Tailwind CSS"],
     github: "https://github.com/hanselmejarito/website",
     featured: false,
+    private: true,
   },
   {
     name: "n8n Automation Stack",
@@ -142,6 +151,7 @@ export const projects: Project[] = [
     tech: ["HTML", "CSS", "FlipHTML5"],
     github: "https://github.com/hanselmejarito/anniversary-flipbook",
     featured: false,
+    private: true,
   },
 ];
 

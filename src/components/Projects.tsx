@@ -1,5 +1,5 @@
 import type { Project } from "@/types";
-import { siteConfig } from "./data";
+import { siteConfig } from "@/lib/data";
 
 function ProjectCard({ project }: { project: Project }) {
   return (
