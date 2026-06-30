@@ -43,16 +43,17 @@ export async function fetchGitHubRepos(
 
     if (apiProjects.length === 0) return staticProjects;
 
-    const staticNames = new Set(
-      staticProjects.map((p) => p.github?.split("/").pop())
+    // Prefer curated static entries; only append repos not already listed
+    const staticSlugs = new Set(
+      staticProjects.map((p) => p.github?.split("/").pop()?.toLowerCase())
     );
 
-    const merged = [
+    return [
       ...staticProjects,
-      ...apiProjects.filter((p) => !staticNames.has(p.github?.split("/").pop())),
+      ...apiProjects.filter(
+        (p) => !staticSlugs.has(p.github?.split("/").pop()?.toLowerCase())
+      ),
     ];
-
-    return merged;
   } catch {
     return staticProjects;
   }

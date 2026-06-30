@@ -1,4 +1,5 @@
 import type { Project } from "@/types";
+import { siteConfig } from "./data";
 
 function ProjectCard({ project }: { project: Project }) {
   return (
@@ -69,8 +70,17 @@ export function Projects({ projects }: { projects: Project[] }) {
         <h2 className="mb-2 font-mono text-sm text-accent">Projects</h2>
         <p className="mb-4 text-3xl font-bold text-white">Things I&apos;ve built</p>
         <p className="mb-12 max-w-2xl text-ink-400">
-          A selection of personal and professional projects from my GitHub
-          repositories and local work.
+          Enterprise systems, government platforms, and personal projects —
+          all available on{" "}
+          <a
+            href={`https://github.com/${siteConfig.github}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-accent hover:text-accent-light"
+          >
+            GitHub
+          </a>
+          .
         </p>
 
         <div className="mb-8 grid gap-6 md:grid-cols-2">
