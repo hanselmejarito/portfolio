@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-ink-950 text-ink-100 antialiased;
+  }
+
+  ::selection {
+    @apply bg-accent/30 text-white;
+  }
+}
+
+@layer utilities {
+  .text-gradient {
+    @apply bg-gradient-to-r from-accent-light via-accent to-accent-dark bg-clip-text text-transparent;
+  }
+
+  .card-glow {
+    box-shadow: 0 0 0 1px rgba(59, 158, 255, 0.08),
+      0 4px 24px rgba(0, 0, 0, 0.4);
+  }
+
+  .card-glow:hover {
+    box-shadow: 0 0 0 1px rgba(59, 158, 255, 0.2),
+      0 8px 32px rgba(59, 158, 255, 0.08);
+  }
+}
