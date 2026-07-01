@@ -2,10 +2,10 @@ export interface Project {
   name: string;
   description: string;
   tech: string[];
-  github?: string;
-  live?: string;
+  period: string;
+  company: string;
+  role?: string;
   featured?: boolean;
-  private?: boolean;
 }
 
 export interface Experience {

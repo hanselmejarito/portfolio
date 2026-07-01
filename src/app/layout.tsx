@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Hansel V. Mejarito Jr. — Senior Software Engineer",
   description:
-    "Portfolio of Hansel V. Mejarito Jr., Senior Software Engineer with nearly 9 years of experience in full-stack development, Docker deployments, and enterprise systems.",
+    "Portfolio of Hansel V. Mejarito Jr., Senior Software Engineer with over 8 years of experience in full-stack development, Docker deployments, and enterprise systems. Open to new opportunities.",
   keywords: [
     "Hansel Mejarito",
     "Software Engineer",
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Hansel V. Mejarito Jr. — Senior Software Engineer",
     description:
-      "Building reliable systems — from enterprise apps to modern web platforms.",
+      "Open to new opportunities — over 8 years building enterprise and government systems across the full stack.",
     type: "website",
   },
 };

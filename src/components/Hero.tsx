@@ -2,7 +2,7 @@ import { siteConfig } from "@/lib/data";
 
 export function Hero() {
   return (
-    <section className="relative flex min-h-screen items-center px-6 pt-20">
+    <section className="relative flex min-h-screen items-center px-6 pt-16">
       <div className="pointer-events-none absolute inset-0 overflow-hidden">
         <div className="absolute -left-32 top-1/4 h-96 w-96 rounded-full bg-accent/10 blur-3xl" />
         <div className="absolute -right-32 bottom-1/4 h-80 w-80 rounded-full bg-ink-700/40 blur-3xl" />
@@ -45,8 +45,8 @@ export function Hero() {
             <span className="h-2 w-2 rounded-full bg-emerald-400" />
             {siteConfig.location}
           </span>
-          <span>~9 years experience</span>
-          <span>Full-stack · DevOps · On-premise</span>
+          <span>~8+ years experience</span>
+          <span>Open to opportunities</span>
         </div>
       </div>
     </section>

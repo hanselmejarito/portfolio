@@ -11,8 +11,7 @@ export function About() {
           {about.map((paragraph, i) => (
             <p
               key={i}
-              className="leading-relaxed text-ink-300"
-              style={{ animationDelay: `${i * 100}ms` }}
+              className="rounded-2xl border border-white/5 bg-ink-900/30 p-6 leading-relaxed text-ink-300"
             >
               {paragraph}
             </p>
