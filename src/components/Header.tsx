@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { navLinks, siteConfig } from "@/lib/data";
@@ -28,9 +29,17 @@ export function Header() {
       <header className="fixed inset-x-0 top-0 z-50 border-b border-white/5 bg-ink-950/80 backdrop-blur-md">
         <div className="mx-auto flex h-16 max-w-5xl items-center gap-4 px-6">
           <Link
-            href={siteConfig.website}
-            className="shrink-0 font-mono text-sm font-medium tracking-tight text-ink-200 transition-colors hover:text-white"
+            href="/"
+            className="flex shrink-0 items-center gap-2.5 font-mono text-sm font-medium tracking-tight text-ink-200 transition-colors hover:text-white"
           >
+            <Image
+              src="/logo/HM7.jpg"
+              alt="HM logo"
+              width={28}
+              height={28}
+              className="rounded-sm"
+              priority
+            />
             hansel<span className="text-accent">.dev</span>
           </Link>
 
