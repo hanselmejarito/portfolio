@@ -8,7 +8,7 @@ export function Hero() {
         <div className="absolute -right-32 bottom-1/4 h-80 w-80 rounded-full bg-ink-700/40 blur-3xl" />
       </div>
 
-      <div className="relative mx-auto max-w-5xl animate-fade-up">
+      <div className="relative mx-auto max-w-5xl">
         <p className="mb-4 font-mono text-sm text-accent">
           Hello, I&apos;m
         </p>
@@ -45,8 +45,14 @@ export function Hero() {
             <span className="h-2 w-2 rounded-full bg-emerald-400" />
             {siteConfig.location}
           </span>
-          <span>~8+ years experience</span>
+          <span>8+ years experience</span>
           <span>Open to opportunities</span>
+          <a
+            href="/resume"
+            className="text-accent-light transition hover:text-accent"
+          >
+            Resume →
+          </a>
         </div>
       </div>
     </section>

@@ -4,15 +4,16 @@ export const siteConfig = {
   name: "Hansel V. Mejarito Jr.",
   title: "Senior Software Engineer",
   tagline:
-    "Open to new opportunities — over 8 years building enterprise and government systems across the full stack.",
+    "Senior engineer with 8+ years building nationwide government systems — SSO hubs, case management, IoT monitoring, and citizen-facing platforms for PPA and NACC.",
   email: "mejarito.hansel20@gmail.com",
   linkedin: "https://www.linkedin.com/in/sel-mejarito-1231681b6/",
+  website: "https://hmejarito.vercel.app",
   location: "Metro Manila, Philippines",
 };
 
 export const about = [
-  "Software engineer with over 8 years of experience building production systems for enterprise and government clients in the Philippines — primarily for the Parole and Probation Administration (PPA) and the National Authority for Child Care (NACC).",
-  "I specialize in full-stack development: PHP backends, React/Next.js frontends, Docker deployments, and on-premise infrastructure. Recently using Cursor for faster AI-assisted development from idea to production.",
+  "Software engineer with over 8 years of experience delivering production systems for enterprise and government clients in the Philippines — primarily the Parole and Probation Administration (PPA) and the National Authority for Child Care (NACC).",
+  "I build full-stack solutions across PHP/CodeIgniter backends, React and Next.js frontends, REST APIs, Docker deployments, and on-premise infrastructure. Experienced leading handovers, writing requirements, and shipping systems used nationwide.",
   "Previously Senior Software Engineer at Techsolve Systems Solutions Inc. and Software Engineer at Suiterus Technologies Inc. Open to new opportunities.",
 ];
 
@@ -23,9 +24,9 @@ export const experience: Experience[] = [
     period: "Feb 2022 — Jul 2026",
     duration: "4 yrs 5 mos",
     highlights: [
-      "Built PMS, NACC Citizen's Charter System, and PPA 50th Anniversary Interactive Coffee Table Book",
-      "Lead developer on UAMS, ECMIS, OTP, and BRS after team handover",
-      "BA and backend on RCTS; contributor on PPIS and PMEIS; maintainer on LAN Ports, Access Points and Switches Monitoring",
+      "Built PMS (nationwide print monitoring via Raspberry Pi + SNMP), NACC Citizen's Charter, and PPA 50th Anniversary Coffee Table Book",
+      "Lead developer on UAMS, ECMIS, OTP, and BRS — continued development after team handover",
+      "BA and backend on RCTS; contributor on PPIS and PMEIS; maintainer on LAN monitoring",
     ],
   },
   {
@@ -34,9 +35,9 @@ export const experience: Experience[] = [
     period: "Nov 2017 — Feb 2022",
     duration: "4 yrs 3 mos",
     highlights: [
-      "Contributor on PMT (Project Management Tool) and Dokyumento (Document Management System)",
-      "Built and maintained government and enterprise software systems",
-      "Collaborated with cross-functional teams on full SDLC delivery",
+      "Contributor on PMT (Project Management Tool) and Dokyumento (Document Management System) for government clients",
+      "Built and maintained enterprise web applications across the full SDLC",
+      "Worked with cross-functional teams on requirements, development, testing, and deployment",
     ],
   },
 ];
@@ -95,7 +96,7 @@ export const projects: Project[] = [
   {
     name: "RCTS — Report Collaboration Transcription System",
     description:
-      "Report collaboration and speech-to-text transcription platform for the Parole and Probation Administration. Business analyst and backend developer on the CodeIgniter API — requirements, speech processing integration, data persistence, and REST endpoints supporting the React frontend.",
+      "Report collaboration and speech-to-text transcription platform for the Parole and Probation Administration. Business analyst and backend developer on the CodeIgniter API — requirements gathering, speech processing integration, data persistence, and REST endpoints supporting the React frontend.",
     tech: ["PHP", "CodeIgniter", "MySQL", "REST API", "React"],
     period: "Feb 2022 — Jul 2026",
     company: "Techsolve Systems Solutions Inc.",
@@ -115,8 +116,8 @@ export const projects: Project[] = [
   {
     name: "BRS — Bug Reporting System",
     description:
-      "Internal bug reporting and issue management system with user account controls, API layer, and CodeIgniter MVC structure. Took over development after previous developer left.",
-    tech: ["PHP", "CodeIgniter", "MySQL", "REST API"],
+      "PPA internal bug reporting platform (CodeIgniter portal + REST API) with SSO login — ticket dashboard with category, severity, assignee, and status tracking; severity and category managers; admin-user chat for ticket follow-up; FAQ manager; ticket attachments and assignment; CSV/PDF/Excel export; audit trail and backup/restore.",
+    tech: ["PHP", "CodeIgniter", "MySQL", "REST API", "SSO", "Bootstrap"],
     period: "Feb 2022 — Jul 2026",
     company: "Techsolve Systems Solutions Inc.",
     role: "Lead Developer",
@@ -125,8 +126,8 @@ export const projects: Project[] = [
   {
     name: "RMM — Remote Monitoring",
     description:
-      "Remote monitoring and management web application with dashboard-driven device tracking. Responsible for frontend development on the CodeIgniter-based platform.",
-    tech: ["PHP", "CodeIgniter", "Bootstrap", "jQuery", "MySQL"],
+      "Remote monitoring and management web application for IT infrastructure — dashboard UI showing registered device counts, HDD/SSD and NVMe storage totals, RAM usage, and cluster breakdowns via Chart.js bar graphs. Frontend development on cluster management, notifications, prohibited apps, licensing, and app/service monitoring views.",
+    tech: ["PHP", "CodeIgniter", "Bootstrap", "jQuery", "Chart.js", "MySQL"],
     period: "Feb 2022 — Jul 2026",
     company: "Techsolve Systems Solutions Inc.",
     role: "Frontend",
@@ -135,7 +136,7 @@ export const projects: Project[] = [
   {
     name: "PPIS — Probation and Parole Information System",
     description:
-      "Information system for managing probation and parole records, case data, and reporting workflows for the Parole and Probation Administration.",
+      "Core information system for probation and parole records, case data, and reporting workflows across PPA field offices. Contributed to feature development and maintenance on the CodeIgniter-based platform.",
     tech: ["PHP", "CodeIgniter", "MySQL", "Bootstrap"],
     period: "Feb 2022 — Jul 2026",
     company: "Techsolve Systems Solutions Inc.",
@@ -145,7 +146,7 @@ export const projects: Project[] = [
   {
     name: "PMEIS — Performance Monitoring and Evaluation Information System",
     description:
-      "System for tracking, monitoring, and evaluating performance metrics and outcomes across probation and parole operations.",
+      "Performance monitoring and evaluation system for tracking outcomes and metrics across probation and parole operations. Contributed to modules for data entry, reporting, and system maintenance.",
     tech: ["PHP", "CodeIgniter", "MySQL", "Bootstrap"],
     period: "Feb 2022 — Jul 2026",
     company: "Techsolve Systems Solutions Inc.",
@@ -155,7 +156,7 @@ export const projects: Project[] = [
   {
     name: "LAN Ports, Access Points and Switches Monitoring System",
     description:
-      "Network infrastructure monitoring system for LAN ports, wireless access points, and switches. Took over as maintainer after the original developer left.",
+      "Network infrastructure monitoring for LAN ports, wireless access points, and switches across PPA offices. Took over as maintainer — SNMP-based polling, status dashboards, and ongoing system upkeep after original developer departure.",
     tech: ["PHP", "CodeIgniter", "MySQL", "SNMP", "Bootstrap"],
     period: "Feb 2022 — Jul 2026",
     company: "Techsolve Systems Solutions Inc.",
@@ -165,7 +166,7 @@ export const projects: Project[] = [
   {
     name: "PMT — Project Management Tool",
     description:
-      "Enterprise project management platform for tracking tasks, milestones, and team workflows across government and corporate engagements.",
+      "Enterprise project management platform for tracking tasks, milestones, and team workflows across government and corporate engagements at Suiterus.",
     tech: ["PHP", "CodeIgniter", "MySQL", "Bootstrap"],
     period: "2017 — 2022",
     company: "Suiterus Technologies Inc.",
@@ -175,7 +176,7 @@ export const projects: Project[] = [
   {
     name: "Dokyumento — Document Management System",
     description:
-      "Document management system for storing, organizing, and retrieving institutional files with role-based access and audit trails.",
+      "Document management system for storing, organizing, and retrieving institutional files with role-based access, version tracking, and audit trails for enterprise clients.",
     tech: ["PHP", "CodeIgniter", "MySQL", "Bootstrap"],
     period: "2017 — 2022",
     company: "Suiterus Technologies Inc.",
@@ -185,8 +186,8 @@ export const projects: Project[] = [
   {
     name: "Chrome Industries Storefront",
     description:
-      "Self-hosted e-commerce storefront with product catalog, localStorage cart, and email-based checkout. Built with Next.js and developed using Cursor — from scaffolding to deployment-ready UI.",
-    tech: ["Next.js 15", "React 19", "TypeScript", "Tailwind CSS", "Cursor"],
+      "Self-hosted e-commerce storefront with product catalog, localStorage cart, and email-based checkout. Built with Next.js 15, React 19, and TypeScript — from scaffolding to deployment-ready UI.",
+    tech: ["Next.js 15", "React 19", "TypeScript", "Tailwind CSS"],
     period: "2026",
     company: "Personal",
     role: "Built",
@@ -195,8 +196,8 @@ export const projects: Project[] = [
   {
     name: "ARC Anti Rabies Clinic — Website",
     description:
-      "Professional website for a veterinary clinic — service pages, pricing tables, and responsive layout. Designed and built with Cursor.",
-    tech: ["HTML", "CSS", "Responsive Design", "Cursor"],
+      "Professional website for a veterinary clinic — service pages, pricing tables, and responsive layout built with modern HTML/CSS.",
+    tech: ["HTML", "CSS", "Responsive Design"],
     period: "2026",
     company: "Personal",
     role: "Built",
@@ -205,8 +206,8 @@ export const projects: Project[] = [
   {
     name: "n8n — Social Media & AI Automations",
     description:
-      "Three self-hosted n8n workflows on Docker: (1) automated weather updates posted to a Facebook page; (2) video pipeline from Google Drive to Facebook and YouTube — upload once, auto-publish to social media; (3) Facebook Messenger assistant for Kopimo (sample coffee page) — AI reads product info from Google Docs and replies to customer inquiries in Messenger.",
-    tech: ["n8n", "Docker", "PostgreSQL", "Facebook API", "YouTube API", "Google Drive", "Google Docs", "AI"],
+      "Three self-hosted n8n workflows on Docker: (1) automated weather updates posted to a Facebook page; (2) video pipeline from Google Drive to Facebook and YouTube; (3) Facebook Messenger AI assistant that reads product info from Google Docs and replies to customer inquiries.",
+    tech: ["n8n", "Docker", "PostgreSQL", "Facebook API", "YouTube API", "Google Drive", "AI"],
     period: "2026",
     company: "Personal",
     role: "Built",
@@ -234,7 +235,6 @@ export const skills: SkillCategory[] = [
       "Requirements Gathering",
       "n8n",
       "Workflow Automation",
-      "Cursor",
       "AI-Assisted Development",
     ],
   },

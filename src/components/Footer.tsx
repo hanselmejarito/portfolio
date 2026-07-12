@@ -7,9 +7,19 @@ export function Footer() {
         <p>
           © {new Date().getFullYear()} {siteConfig.name}
         </p>
-        <p className="font-mono text-xs">
-          Built with Next.js & Tailwind CSS
-        </p>
+        <div className="flex flex-wrap items-center justify-center gap-4 font-mono text-xs">
+          <a
+            href={siteConfig.website}
+            className="transition hover:text-ink-300"
+          >
+            {siteConfig.website.replace("https://", "")}
+          </a>
+          <a href="/resume" className="transition hover:text-ink-300">
+            Resume
+          </a>
+          <span className="text-ink-600">·</span>
+          <span>Built with Next.js & Tailwind CSS</span>
+        </div>
       </div>
     </footer>
   );

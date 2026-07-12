@@ -28,7 +28,7 @@ export function Header() {
       <header className="fixed inset-x-0 top-0 z-50 border-b border-white/5 bg-ink-950/80 backdrop-blur-md">
         <div className="mx-auto flex h-16 max-w-5xl items-center gap-4 px-6">
           <Link
-            href="#"
+            href={siteConfig.website}
             className="shrink-0 font-mono text-sm font-medium tracking-tight text-ink-200 transition-colors hover:text-white"
           >
             hansel<span className="text-accent">.dev</span>
