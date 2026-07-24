@@ -1,4 +1,11 @@
-import { experience, siteConfig, skills } from "@/lib/data";
+import {
+  achievements,
+  education,
+  experience,
+  publicService,
+  siteConfig,
+  skills,
+} from "@/lib/data";
 import { ResumeActions } from "@/components/ResumeActions";
 
 export const metadata = {
@@ -93,13 +100,55 @@ export default function ResumePage() {
           </ul>
         </section>
 
-        <section>
+        <section className="mb-8">
           <h2 className="mb-3 text-sm font-bold uppercase tracking-wider text-gray-500">
             Skills
           </h2>
           <p className="text-sm leading-relaxed text-gray-700">
             {featuredSkills.join(" · ")}
           </p>
+        </section>
+
+        <section className="mb-8">
+          <h2 className="mb-3 text-sm font-bold uppercase tracking-wider text-gray-500">
+            Public Service
+          </h2>
+          <div className="flex flex-wrap items-baseline justify-between gap-2">
+            <h3 className="text-sm font-semibold">{publicService.role}</h3>
+            <span className="text-sm text-gray-500">{publicService.period}</span>
+          </div>
+          <p className="text-sm text-gray-600">{publicService.org}</p>
+          <p className="mt-1 text-sm text-gray-700">{publicService.note}</p>
+        </section>
+
+        <section className="mb-8">
+          <h2 className="mb-3 text-sm font-bold uppercase tracking-wider text-gray-500">
+            Education
+          </h2>
+          <div className="space-y-2">
+            {education.map((entry) => (
+              <div key={entry.school}>
+                <h3 className="text-sm font-semibold">{entry.school}</h3>
+                <p className="text-sm text-gray-600">{entry.program}</p>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        <section>
+          <h2 className="mb-3 text-sm font-bold uppercase tracking-wider text-gray-500">
+            Achievements & Certificates
+          </h2>
+          <ul className="space-y-1">
+            {achievements
+              .filter((item) => !item.title.includes("Seminar"))
+              .map((item) => (
+                <li key={`${item.year}-${item.title}`} className="text-sm text-gray-700">
+                  <span className="font-medium text-gray-500">{item.year}</span> —{" "}
+                  {item.title} · {item.issuer}
+                </li>
+              ))}
+          </ul>
         </section>
       </article>
 

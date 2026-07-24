@@ -6,6 +6,7 @@ export interface Project {
   company: string;
   role?: string;
   featured?: boolean;
+  link?: string;
 }
 
 export interface Experience {
@@ -19,4 +20,17 @@ export interface Experience {
 export interface SkillCategory {
   category: string;
   items: string[];
+}
+
+export interface Achievement {
+  year: string;
+  title: string;
+  issuer: string;
+  detail?: string;
+}
+
+export interface Education {
+  school: string;
+  program: string;
+  note?: string;
 }

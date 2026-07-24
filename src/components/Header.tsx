@@ -7,6 +7,19 @@ import { navLinks, siteConfig } from "@/lib/data";
 
 export function Header() {
   const [open, setOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+  const [progress, setProgress] = useState(0);
+
+  useEffect(() => {
+    const onScroll = () => {
+      setScrolled(window.scrollY > 24);
+      const total = document.documentElement.scrollHeight - window.innerHeight;
+      setProgress(total > 0 ? window.scrollY / total : 0);
+    };
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
 
   useEffect(() => {
     if (!open) return;
@@ -26,7 +39,19 @@ export function Header() {
 
   return (
     <>
-      <header className="fixed inset-x-0 top-0 z-50 border-b border-white/5 bg-ink-950/80 backdrop-blur-md">
+      <header
+        className={`fixed inset-x-0 top-0 z-50 transition-all duration-300 ${
+          scrolled
+            ? "border-b border-white/[0.06] bg-ink-950/75 backdrop-blur-xl"
+            : "border-b border-transparent bg-transparent"
+        }`}
+      >
+        <span
+          aria-hidden="true"
+          className="absolute inset-x-0 top-0 h-[2px] origin-left bg-gradient-to-r from-accent to-accent-violet"
+          style={{ transform: `scaleX(${progress})` }}
+        />
+
         <div className="mx-auto flex h-16 max-w-5xl items-center gap-4 px-6">
           <Link
             href="/"
@@ -37,13 +62,13 @@ export function Header() {
               alt="HM logo"
               width={28}
               height={28}
-              className="rounded-sm"
+              className="rounded-md"
               priority
             />
             hansel<span className="text-accent">.dev</span>
           </Link>
 
-          <nav className="hidden flex-1 items-center justify-center gap-6 md:flex">
+          <nav className="hidden flex-1 items-center justify-center gap-7 md:flex">
             {navLinks.map((link) => (
               <a
                 key={link.href}
@@ -89,7 +114,7 @@ export function Header() {
               href={siteConfig.linkedin}
               target="_blank"
               rel="noopener noreferrer"
-              className="shrink-0 rounded-lg border border-white/10 bg-white/5 px-3 py-1.5 text-sm text-ink-200 transition hover:border-accent/40 hover:bg-accent/10 hover:text-white"
+              className="shrink-0 rounded-lg border border-white/10 bg-white/[0.04] px-3.5 py-1.5 text-sm text-ink-200 transition hover:border-accent/40 hover:bg-accent/10 hover:text-white"
             >
               LinkedIn
             </a>

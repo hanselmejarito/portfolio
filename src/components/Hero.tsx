@@ -1,60 +1,98 @@
-import { siteConfig } from "@/lib/data";
+import { Reveal } from "@/components/Reveal";
+import { siteConfig, stats } from "@/lib/data";
 
 export function Hero() {
   return (
-    <section className="relative flex min-h-screen items-center px-6 pt-16">
+    <section className="relative flex min-h-screen flex-col justify-center px-6 pb-24 pt-32">
+      <div className="bg-grid edge-fade-b pointer-events-none absolute inset-0" aria-hidden="true" />
       <div className="pointer-events-none absolute inset-0 overflow-hidden">
-        <div className="absolute -left-32 top-1/4 h-96 w-96 rounded-full bg-accent/10 blur-3xl" />
-        <div className="absolute -right-32 bottom-1/4 h-80 w-80 rounded-full bg-ink-700/40 blur-3xl" />
+        <div className="animate-drift-slow absolute -left-40 top-1/4 h-[28rem] w-[28rem] rounded-full bg-accent/[0.07] blur-3xl" />
+        <div className="animate-drift-slower absolute -right-32 top-1/2 h-96 w-96 rounded-full bg-accent-violet/[0.07] blur-3xl" />
       </div>
 
-      <div className="relative mx-auto max-w-5xl">
-        <p className="mb-4 font-mono text-sm text-accent">
-          Hello, I&apos;m
-        </p>
+      <div className="relative mx-auto w-full max-w-5xl">
+        <Reveal>
+          <div className="mb-8 inline-flex items-center gap-2.5 rounded-full border border-emerald-400/20 bg-emerald-400/[0.06] px-4 py-1.5 text-sm text-emerald-300">
+            <span className="animate-pulse-dot h-2 w-2 rounded-full bg-emerald-400" />
+            Available for full-time remote work · {siteConfig.location}
+          </div>
+        </Reveal>
 
-        <h1 className="mb-4 text-4xl font-bold tracking-tight text-white sm:text-5xl lg:text-6xl">
-          {siteConfig.name}
-        </h1>
+        <Reveal delay={100}>
+          <h1 className="mb-6 text-5xl font-semibold leading-[1.05] tracking-tight text-white sm:text-6xl lg:text-7xl">
+            Building systems that
+            <br />
+            serve a{" "}
+            <span className="font-display-italic font-normal text-gradient">
+              whole nation.
+            </span>
+          </h1>
+        </Reveal>
 
-        <p className="mb-2 text-xl font-medium text-ink-200 sm:text-2xl">
-          {siteConfig.title}
-        </p>
+        <Reveal delay={200}>
+          <p className="mb-4 text-xl font-medium text-ink-200">
+            {siteConfig.name} — {siteConfig.title}
+          </p>
+          <p className="mb-10 max-w-2xl text-lg leading-relaxed text-ink-300">
+            {siteConfig.tagline}
+          </p>
+        </Reveal>
 
-        <p className="mb-8 max-w-2xl text-lg leading-relaxed text-ink-300">
-          {siteConfig.tagline}
-        </p>
+        <Reveal delay={300}>
+          <div className="flex flex-wrap items-center gap-4">
+            <a
+              href="#projects"
+              className="group rounded-xl bg-white px-7 py-3.5 text-sm font-semibold text-ink-950 transition hover:bg-accent-light"
+            >
+              View my work
+              <span className="ml-2 inline-block transition-transform group-hover:translate-x-1">
+                →
+              </span>
+            </a>
+            <a
+              href="#contact"
+              className="rounded-xl border border-white/10 bg-white/[0.03] px-7 py-3.5 text-sm font-semibold text-ink-100 transition hover:border-white/25 hover:bg-white/[0.06]"
+            >
+              Get in touch
+            </a>
+            <a
+              href="/resume"
+              className="px-2 py-3.5 text-sm font-medium text-accent-light underline-offset-4 transition hover:text-accent hover:underline"
+            >
+              Resume
+            </a>
+          </div>
+        </Reveal>
 
-        <div className="flex flex-wrap items-center gap-4">
-          <a
-            href="#projects"
-            className="rounded-xl bg-accent px-6 py-3 text-sm font-semibold text-white transition hover:bg-accent-dark"
-          >
-            View Projects
-          </a>
-          <a
-            href="#contact"
-            className="rounded-xl border border-white/10 px-6 py-3 text-sm font-semibold text-ink-200 transition hover:border-white/20 hover:text-white"
-          >
-            Get in Touch
-          </a>
-        </div>
-
-        <div className="mt-12 flex flex-wrap gap-6 text-sm text-ink-400">
-          <span className="flex items-center gap-2">
-            <span className="h-2 w-2 rounded-full bg-emerald-400" />
-            {siteConfig.location}
-          </span>
-          <span>8+ years experience</span>
-          <span>Open to opportunities</span>
-          <a
-            href="/resume"
-            className="text-accent-light transition hover:text-accent"
-          >
-            Resume →
-          </a>
-        </div>
+        <Reveal delay={450}>
+          <dl className="mt-20 grid grid-cols-2 gap-px overflow-hidden rounded-2xl border border-white/[0.06] bg-white/[0.06] md:grid-cols-4">
+            {stats.map((stat) => (
+              <div key={stat.label} className="bg-ink-950/90 p-6">
+                <dd className="text-3xl font-semibold tracking-tight text-white">
+                  {stat.value}
+                </dd>
+                <dt className="mt-1 text-sm text-ink-400">{stat.label}</dt>
+              </div>
+            ))}
+          </dl>
+        </Reveal>
       </div>
+
+      <a
+        href="#about"
+        aria-label="Scroll to about section"
+        className="absolute bottom-8 left-1/2 hidden -translate-x-1/2 text-ink-500 transition hover:text-ink-300 md:block"
+      >
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path
+            d="M12 4v16m0 0l-6-6m6 6l6-6"
+            stroke="currentColor"
+            strokeWidth="1.5"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          />
+        </svg>
+      </a>
     </section>
   );
 }

@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist, Geist_Mono, Instrument_Serif } from "next/font/google";
 import { siteConfig } from "@/lib/data";
 import "./globals.css";
 
@@ -10,6 +10,13 @@ const geistSans = Geist({
 
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
+  subsets: ["latin"],
+});
+
+const instrumentSerif = Instrument_Serif({
+  variable: "--font-display",
+  weight: "400",
+  style: ["normal", "italic"],
   subsets: ["latin"],
 });
 
@@ -53,8 +60,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${geistSans.variable} ${geistMono.variable}`}>
+    <html
+      lang="en"
+      className={`${geistSans.variable} ${geistMono.variable} ${instrumentSerif.variable}`}
+    >
       <body className="bg-ink-950 font-sans text-ink-100 antialiased">
+        <div className="noise-overlay" aria-hidden="true" />
         {children}
       </body>
     </html>

@@ -1,4 +1,10 @@
-import type { Experience, Project, SkillCategory } from "@/types";
+import type {
+  Achievement,
+  Education,
+  Experience,
+  Project,
+  SkillCategory,
+} from "@/types";
 
 export const siteConfig = {
   name: "Hansel V. Mejarito Jr.",
@@ -6,10 +12,18 @@ export const siteConfig = {
   tagline:
     "Senior engineer with 8+ years building nationwide government systems — SSO hubs, case management, IoT monitoring, and citizen-facing platforms for PPA and NACC.",
   email: "mejarito.hansel20@gmail.com",
+  formspree: "https://formspree.io/f/xdaqoqzy",
   linkedin: "https://www.linkedin.com/in/sel-mejarito-1231681b6/",
   website: "https://hmejarito.vercel.app",
-  location: "Metro Manila, Philippines",
+  location: "Guimba, Nueva Ecija, Philippines",
 };
+
+export const stats = [
+  { value: "8+", label: "Years of experience" },
+  { value: "15+", label: "Production systems shipped" },
+  { value: "2", label: "Government agencies served" },
+  { value: "PH-wide", label: "Nationwide deployments" },
+];
 
 export const about = [
   "Software engineer with over 8 years of experience delivering production systems for enterprise and government clients in the Philippines — primarily the Parole and Probation Administration (PPA) and the National Authority for Child Care (NACC).",
@@ -52,6 +66,7 @@ export const projects: Project[] = [
     company: "Techsolve Systems Solutions Inc.",
     role: "Built",
     featured: false,
+    link: "https://qr-ppa50thanniv.org/",
   },
   {
     name: "PMS — Print Monitoring System",
@@ -196,12 +211,13 @@ export const projects: Project[] = [
   {
     name: "ARC Anti Rabies Clinic — Website",
     description:
-      "Professional website for a veterinary clinic — service pages, pricing tables, and responsive layout built with modern HTML/CSS.",
+      "Live site for an anti-rabies clinic chain with 11 branches across Nueva Ecija and Tarlac — services catalog, first-aid guide, searchable branch directory with filters, FAQ, and contact form with branch selection.",
     tech: ["HTML", "CSS", "Responsive Design"],
     period: "2026",
     company: "Personal",
     role: "Built",
     featured: false,
+    link: "https://arcantirabisclinic.vercel.app/",
   },
   {
     name: "n8n — Social Media & AI Automations",
@@ -240,10 +256,76 @@ export const skills: SkillCategory[] = [
   },
 ];
 
+export const achievements: Achievement[] = [
+  {
+    year: "2019",
+    title: "Web Design Competition — 9th I.T. Skills Olympics",
+    issuer: "University of Makati, College of Computer Science",
+    detail: "Represented College of Saint John Paul II Arts and Sciences",
+  },
+  {
+    year: "2019",
+    title: "Growth Marketing in the New Era — Seminar",
+    issuer: "Autumn Creative Mktg.",
+  },
+  {
+    year: "2018",
+    title: "Web Design — 8th I.T. Skills Olympics",
+    issuer: "University of Makati, College of Computer Science",
+    detail: "Represented College of Saint John Paul II Arts and Sciences",
+  },
+  {
+    year: "2018",
+    title: "Hackathon — Collaborative Computer Programming",
+    issuer: "Hackathon event",
+  },
+  {
+    year: "2016",
+    title: "1st Runner-up — Chess Competition",
+    issuer: "Datamex Institute of Science and Technology",
+  },
+  {
+    year: "2015",
+    title: "5th Outstanding Student — 1st Year Information Technology",
+    issuer: "Datamex Institute of Science and Technology",
+  },
+  {
+    year: "2014",
+    title: "Chess Champion Overall — University Intramurals",
+    issuer: "Polytechnic University of the Philippines",
+  },
+];
+
+export const education: Education[] = [
+  {
+    school: "College of Saint John Paul II Arts and Sciences",
+    program: "Bachelor's Degree (undergraduate)",
+    note: "Competed in the UMak I.T. Skills Olympics web design competitions (2018, 2019)",
+  },
+  {
+    school: "Datamex Institute of Science and Technology",
+    program: "Information Technology (vocational) — Graduate",
+    note: "5th Outstanding Student — and the face of the school's \"Be a Datamexian!\" enrollment campaign",
+  },
+  {
+    school: "Polytechnic University of the Philippines",
+    program: "BS Banking and Finance (1st year)",
+    note: "University Intramurals Chess Champion Overall (2014)",
+  },
+];
+
+export const publicService = {
+  role: "SK Kagawad — Sangguniang Kabataan Councilor",
+  org: "Barangay St. Joseph, City of San Juan, Metro Manila",
+  period: "Jul 2018 — Nov 2023",
+  note: "Elected youth council member — served a full five-year term in local government",
+};
+
 export const navLinks = [
   { href: "#about", label: "About" },
   { href: "#experience", label: "Experience" },
   { href: "#projects", label: "Projects" },
   { href: "#skills", label: "Skills" },
+  { href: "#recognition", label: "Recognition" },
   { href: "#contact", label: "Contact" },
 ];

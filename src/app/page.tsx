@@ -5,6 +5,7 @@ import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
 import { Hero } from "@/components/Hero";
 import { Projects } from "@/components/Projects";
+import { Recognition } from "@/components/Recognition";
 import { Skills } from "@/components/Skills";
 import { projects } from "@/lib/data";
 
@@ -18,6 +19,7 @@ export default function Home() {
         <Experience />
         <Projects projects={projects} />
         <Skills />
+        <Recognition />
         <Contact />
       </main>
       <Footer />
