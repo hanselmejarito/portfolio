@@ -4,7 +4,6 @@ import {
   experience,
   publicService,
   siteConfig,
-  skills,
 } from "@/lib/data";
 import { ResumeActions } from "@/components/ResumeActions";
 
@@ -14,7 +13,27 @@ export const metadata = {
 };
 
 export default function ResumePage() {
-  const featuredSkills = skills.flatMap((g) => g.items).slice(0, 16);
+  const featuredSkills = [
+    "PHP",
+    "CodeIgniter",
+    "React",
+    "Next.js",
+    "TypeScript",
+    "REST APIs",
+    "MySQL",
+    "Docker",
+    "Cursor",
+    "ChatGPT",
+    "Claude",
+    "Gemini",
+    "AI-Assisted Development",
+    "n8n",
+    "Business Analysis",
+    "Tailwind CSS",
+    "PostgreSQL",
+    "Git",
+    "Linux",
+  ];
 
   return (
     <div className="min-h-screen bg-white text-gray-900 print:min-h-0">
@@ -45,7 +64,9 @@ export default function ResumePage() {
             Software engineer with over 8 years building production systems for PPA and NACC —
             full-stack PHP/CodeIgniter backends, React/Next.js frontends, REST APIs, Docker, and
             on-premise deployments. Experienced as lead developer, business analyst, and
-            maintainer across nationwide government platforms.
+            maintainer across nationwide government platforms. Productive daily with Cursor,
+            ChatGPT, Claude, and Gemini for AI-assisted development — accelerating delivery
+            while owning architecture and quality. Seeking full-time remote work.
           </p>
         </section>
 

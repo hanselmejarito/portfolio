@@ -28,7 +28,7 @@ export const stats = [
 export const about = [
   "Software engineer with over 8 years of experience delivering production systems for enterprise and government clients in the Philippines — primarily the Parole and Probation Administration (PPA) and the National Authority for Child Care (NACC).",
   "I build full-stack solutions across PHP/CodeIgniter backends, React and Next.js frontends, REST APIs, Docker deployments, and on-premise infrastructure. Experienced leading handovers, writing requirements, and shipping systems used nationwide.",
-  "Previously Senior Software Engineer at Techsolve Systems Solutions Inc. and Software Engineer at Suiterus Technologies Inc. Open to new opportunities.",
+  "Started as a hands-on hardcoder — now I work daily with Cursor, ChatGPT, Claude, and Gemini for AI-assisted development to ship faster while owning architecture, quality, and production systems. Previously Senior Software Engineer at Techsolve Systems Solutions Inc. and Software Engineer at Suiterus Technologies Inc. Looking for full-time remote work.",
 ];
 
 export const experience: Experience[] = [
@@ -245,13 +245,17 @@ export const skills: SkillCategory[] = [
     items: ["Docker", "Docker Compose", "Git", "Linux", "SNMP"],
   },
   {
-    category: "Analysis & Automation",
+    category: "AI & Automation",
     items: [
-      "Business Analysis",
-      "Requirements Gathering",
+      "Cursor",
+      "ChatGPT",
+      "Claude",
+      "Gemini",
+      "AI-Assisted Development",
       "n8n",
       "Workflow Automation",
-      "AI-Assisted Development",
+      "Business Analysis",
+      "Requirements Gathering",
     ],
   },
 ];

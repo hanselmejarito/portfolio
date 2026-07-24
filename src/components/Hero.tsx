@@ -1,4 +1,5 @@
 import { Reveal } from "@/components/Reveal";
+import { ScrollLink } from "@/components/ScrollLink";
 import { siteConfig, stats } from "@/lib/data";
 
 export function Hero() {
@@ -40,7 +41,7 @@ export function Hero() {
 
         <Reveal delay={300}>
           <div className="flex flex-wrap items-center gap-4">
-            <a
+            <ScrollLink
               href="#projects"
               className="group rounded-xl bg-white px-7 py-3.5 text-sm font-semibold text-ink-950 transition hover:bg-accent-light"
             >
@@ -48,13 +49,13 @@ export function Hero() {
               <span className="ml-2 inline-block transition-transform group-hover:translate-x-1">
                 →
               </span>
-            </a>
-            <a
+            </ScrollLink>
+            <ScrollLink
               href="#contact"
               className="rounded-xl border border-white/10 bg-white/[0.03] px-7 py-3.5 text-sm font-semibold text-ink-100 transition hover:border-white/25 hover:bg-white/[0.06]"
             >
               Get in touch
-            </a>
+            </ScrollLink>
             <a
               href="/resume"
               className="px-2 py-3.5 text-sm font-medium text-accent-light underline-offset-4 transition hover:text-accent hover:underline"
@@ -78,7 +79,7 @@ export function Hero() {
         </Reveal>
       </div>
 
-      <a
+      <ScrollLink
         href="#about"
         aria-label="Scroll to about section"
         className="absolute bottom-8 left-1/2 hidden -translate-x-1/2 text-ink-500 transition hover:text-ink-300 md:block"
@@ -92,7 +93,7 @@ export function Hero() {
             strokeLinejoin="round"
           />
         </svg>
-      </a>
+      </ScrollLink>
     </section>
   );
 }

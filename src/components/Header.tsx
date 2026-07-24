@@ -3,6 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
+import { ScrollLink } from "@/components/ScrollLink";
 import { navLinks, siteConfig } from "@/lib/data";
 
 export function Header() {
@@ -70,13 +71,13 @@ export function Header() {
 
           <nav className="hidden flex-1 items-center justify-center gap-7 md:flex">
             {navLinks.map((link) => (
-              <a
+              <ScrollLink
                 key={link.href}
                 href={link.href}
                 className="text-sm text-ink-300 transition-colors hover:text-white"
               >
                 {link.label}
-              </a>
+              </ScrollLink>
             ))}
           </nav>
 
@@ -133,14 +134,14 @@ export function Header() {
             onClick={(e) => e.stopPropagation()}
           >
             {navLinks.map((link) => (
-              <a
+              <ScrollLink
                 key={link.href}
                 href={link.href}
-                onClick={() => setOpen(false)}
+                onNavigate={() => setOpen(false)}
                 className="rounded-lg px-4 py-3 text-base text-ink-200 transition hover:bg-white/5 hover:text-white"
               >
                 {link.label}
-              </a>
+              </ScrollLink>
             ))}
           </nav>
         </div>
