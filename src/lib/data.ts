@@ -199,20 +199,21 @@ export const projects: Project[] = [
     featured: false,
   },
   {
-    name: "Chrome Industries Storefront",
+    name: "Honest Mistake — Storefront",
     description:
-      "Self-hosted e-commerce storefront with product catalog, localStorage cart, and email-based checkout. Built with Next.js 15, React 19, and TypeScript — from scaffolding to deployment-ready UI.",
-    tech: ["Next.js 15", "React 19", "TypeScript", "Tailwind CSS"],
+      "Streetwear e-commerce for a Manila-based limited-drop brand — product lineup with quick-add sizes, sale pricing, newsletter signup, and multi-payment checkout options (GCash, Maya, COD). Race-mesh collection UI with Filipino/Japanese bilingual branding.",
+    tech: ["Next.js", "React", "TypeScript", "Tailwind CSS"],
     period: "2026",
     company: "Personal",
     role: "Built",
     featured: false,
+    link: "https://hm-worldwide.vercel.app/",
   },
   {
     name: "ARC Anti Rabies Clinic — Website",
     description:
       "Live site for an anti-rabies clinic chain with 11 branches across Nueva Ecija and Tarlac — services catalog, first-aid guide, searchable branch directory with filters, FAQ, and contact form with branch selection.",
-    tech: ["HTML", "CSS", "Responsive Design"],
+    tech: ["Next.js", "React", "TypeScript", "CSS", "Leaflet", "Formspree"],
     period: "2026",
     company: "Personal",
     role: "Built",
