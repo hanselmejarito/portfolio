@@ -199,31 +199,51 @@ export const projects: Project[] = [
     featured: false,
   },
   {
-    name: "Honest Mistake — Storefront",
+    name: "KOPIMO — Messenger AI Agent",
     description:
-      "Streetwear e-commerce for a Manila-based limited-drop brand — product lineup with quick-add sizes, sale pricing, newsletter signup, and multi-payment checkout options (GCash, Maya, COD). Race-mesh collection UI with Filipino/Japanese bilingual branding.",
-    tech: ["Next.js", "React", "TypeScript", "Tailwind CSS"],
+      "Serverless Facebook Messenger assistant for a coffee shop — answers strictly from a file-based knowledge base (menu, hours, FAQ), collects Take-out/Pick-up orders in chat, saves draft rows to Google Sheets (Pending Confirmation) so counter staff can see orders before the customer says yes, then confirms to Pending Pickup. Built as a typed replacement for an n8n workflow: Gemini function calling, Upstash Redis memory/dedupe/rate limits, Meta webhook signature verification, and Vercel waitUntil async processing.",
+    tech: [
+      "Node.js",
+      "Express",
+      "TypeScript",
+      "Vercel",
+      "Google Gemini",
+      "Upstash Redis",
+      "Google Sheets API",
+      "Facebook Graph API",
+    ],
     period: "2026",
     company: "Personal",
     role: "Built",
+    featured: false,
+    link: "https://github.com/hanselmejarito/coffeeaiagent",
+  },
+  {
+    name: "Honest Mistake — Storefront",
+    description:
+      "Streetwear e-commerce for a Manila-based limited-drop clothing brand — product lineup with quick-add sizes, sale pricing, newsletter signup, and multi-payment checkout options (GCash, Maya, COD). Race-mesh collection UI with Filipino/Japanese bilingual branding. Built with Cursor.",
+    tech: ["Next.js", "React", "TypeScript", "Tailwind CSS", "Cursor"],
+    period: "2026",
+    company: "Personal",
+    role: "Built with Cursor",
     featured: false,
     link: "https://hm-worldwide.vercel.app/",
   },
   {
     name: "ARC Anti Rabies Clinic — Website",
     description:
-      "Live site for an anti-rabies clinic chain with 11 branches across Nueva Ecija and Tarlac — services catalog, first-aid guide, searchable branch directory with filters, FAQ, and contact form with branch selection.",
-    tech: ["Next.js", "React", "TypeScript", "CSS", "Leaflet", "Formspree"],
+      "Live site for an anti-rabies clinic chain with 11 branches across Nueva Ecija and Tarlac — services catalog, first-aid guide, searchable branch directory with filters, FAQ, and contact form with branch selection. Built with Cursor.",
+    tech: ["Next.js", "React", "TypeScript", "CSS", "Leaflet", "Formspree", "Cursor"],
     period: "2026",
     company: "Personal",
-    role: "Built",
+    role: "Built with Cursor",
     featured: false,
     link: "https://arcantirabisclinic.vercel.app/",
   },
   {
     name: "n8n — Social Media & AI Automations",
     description:
-      "Three self-hosted n8n workflows on Docker: (1) automated weather updates posted to a Facebook page; (2) video pipeline from Google Drive to Facebook and YouTube; (3) Facebook Messenger AI assistant that reads product info from Google Docs and replies to customer inquiries.",
+      "Three self-hosted n8n workflows on Docker: (1) automated weather updates posted to a Facebook page; (2) video pipeline from Google Drive to Facebook and YouTube; (3) Facebook Messenger AI assistant prototype (later rebuilt as the typed KOPIMO Messenger AI Agent on Vercel).",
     tech: ["n8n", "Docker", "PostgreSQL", "Facebook API", "YouTube API", "Google Drive", "AI"],
     period: "2026",
     company: "Personal",
@@ -239,11 +259,11 @@ export const skills: SkillCategory[] = [
   },
   {
     category: "Backend",
-    items: ["PHP", "CodeIgniter", "REST APIs", "MySQL", "PostgreSQL"],
+    items: ["PHP", "CodeIgniter", "Node.js", "Express", "REST APIs", "MySQL", "PostgreSQL"],
   },
   {
     category: "DevOps & Tools",
-    items: ["Docker", "Docker Compose", "Git", "Linux", "SNMP"],
+    items: ["Docker", "Docker Compose", "Vercel", "Git", "Linux", "SNMP"],
   },
   {
     category: "AI & Automation",

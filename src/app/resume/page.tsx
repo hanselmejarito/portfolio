@@ -22,6 +22,9 @@ export default function ResumePage() {
     "REST APIs",
     "MySQL",
     "Docker",
+    "Node.js",
+    "Express",
+    "Vercel",
     "Cursor",
     "ChatGPT",
     "Claude",
@@ -117,6 +120,18 @@ export default function ResumePage() {
             </li>
             <li>
               <strong>RCTS</strong> — Speech-to-text transcription platform (BA · Backend)
+            </li>
+            <li>
+              <strong>KOPIMO Messenger AI Agent</strong> — Serverless Messenger bot (Gemini, Redis,
+              Google Sheets)
+            </li>
+            <li>
+              <strong>Honest Mistake</strong> — Streetwear storefront (Next.js, Vercel) · built with
+              Cursor
+            </li>
+            <li>
+              <strong>ARC Anti Rabies Clinic</strong> — Clinic site with branch directory (Next.js,
+              Vercel) · built with Cursor
             </li>
           </ul>
         </section>
