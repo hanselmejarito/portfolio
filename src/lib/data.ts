@@ -8,9 +8,9 @@ import type {
 
 export const siteConfig = {
   name: "Hansel V. Mejarito Jr.",
-  title: "Web Engineer",
+  title: "Senior Software Engineer",
   tagline:
-    "Web engineer with 8+ years shipping production interfaces — HTML, CSS, JavaScript, jQuery, Bootstrap, and React — backed by REST APIs for nationwide government platforms.",
+    "Senior software engineer with 8+ years shipping full-stack web apps — HTML, CSS, JavaScript, jQuery, Bootstrap, and React on PHP/CodeIgniter backends and REST APIs for nationwide government platforms.",
   email: "mejarito.hansel20@gmail.com",
   formspree: "https://formspree.io/f/xdaqoqzy",
   linkedin: "https://www.linkedin.com/in/sel-mejarito-1231681b6/",
@@ -19,15 +19,15 @@ export const siteConfig = {
 };
 
 export const stats = [
-  { value: "8+", label: "Years building web apps" },
-  { value: "15+", label: "Production UIs shipped" },
+  { value: "8+", label: "Years of full-stack work" },
+  { value: "15+", label: "Production systems shipped" },
   { value: "2", label: "Government agencies served" },
   { value: "PH-wide", label: "Nationwide deployments" },
 ];
 
 export const about = [
-  "Web engineer with over 8 years of experience delivering production web applications for enterprise and government clients in the Philippines — primarily the Parole and Probation Administration (PPA) and the National Authority for Child Care (NACC).",
-  "I build the UI layer in HTML, CSS, and JavaScript — jQuery and Bootstrap for the government portals, React and Next.js on newer work — sitting on REST APIs and PHP/CodeIgniter backends. Experienced owning screens, workflows, and production systems used nationwide.",
+  "Senior software engineer with over 8 years of experience delivering production web applications for enterprise and government clients in the Philippines — primarily the Parole and Probation Administration (PPA) and the National Authority for Child Care (NACC).",
+  "I own both sides: HTML, CSS, and JavaScript UIs — jQuery and Bootstrap on the government portals, React and Next.js on newer work — plus REST APIs, PHP/CodeIgniter backends, MySQL, and production upkeep. Experienced shipping screens, workflows, and systems used nationwide.",
   "Previously Senior Software Engineer at Techsolve Systems Solutions Inc. and Software Engineer at Suiterus Technologies Inc. Based in the Philippines and open to hybrid or remote full-time roles.",
 ];
 

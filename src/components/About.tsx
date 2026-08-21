@@ -4,8 +4,8 @@ import { SpotlightCard } from "@/components/SpotlightCard";
 import { about, siteConfig } from "@/lib/data";
 
 const facts = [
-  { label: "Role", value: "Web Engineer" },
-  { label: "Focus", value: "HTML · CSS · JS · React" },
+  { label: "Role", value: "Senior Software Engineer" },
+  { label: "Focus", value: "Full-stack · Web UI · APIs" },
   { label: "Based in", value: "Guimba, Nueva Ecija, PH" },
   { label: "Status", value: "Open to hybrid and remote" },
 ];
@@ -16,7 +16,7 @@ export function About() {
       <div className="mx-auto max-w-5xl">
         <SectionHeading
           eyebrow="01 — About"
-          title="Web apps with"
+          title="Engineering with"
           accent="public impact."
         />
 

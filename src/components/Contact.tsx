@@ -21,9 +21,8 @@ export function Contact() {
               </span>
             </h2>
             <p className="mb-10 max-w-md text-lg leading-relaxed text-ink-300">
-              Open to full-time web engineering roles — hybrid in the
-              Philippines or remote. Send a message with the form, or reach me
-              directly.
+              Open to full-time roles — hybrid in the Philippines or remote.
+              Send a message with the form, or reach me directly.
             </p>
 
             <a

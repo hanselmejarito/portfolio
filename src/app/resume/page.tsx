@@ -61,10 +61,10 @@ export default function ResumePage() {
             Summary
           </h2>
           <p className="text-sm leading-relaxed text-gray-700">
-            Web engineer with over 8 years shipping production interfaces for PPA and NACC —
-            HTML, CSS, JavaScript, jQuery, and Bootstrap on PHP/CodeIgniter backends, plus
-            React and Next.js on newer work. Experienced as lead developer and maintainer
-            across nationwide web portals, REST APIs, and production systems. Based in the
+            Senior software engineer with over 8 years shipping full-stack web apps for PPA
+            and NACC — HTML, CSS, JavaScript, jQuery, and Bootstrap UIs on PHP/CodeIgniter
+            backends, plus React, Next.js, REST APIs, and production ownership. Experienced as
+            lead developer and maintainer across nationwide portals and services. Based in the
             Philippines and open to hybrid or remote full-time roles.
           </p>
         </section>

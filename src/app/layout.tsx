@@ -22,11 +22,13 @@ const instrumentSerif = Instrument_Serif({
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.website),
-  title: "Hansel V. Mejarito Jr. — Web Engineer",
+  title: "Hansel V. Mejarito Jr. — Senior Software Engineer",
   description:
-    "Portfolio of Hansel V. Mejarito Jr., Web Engineer with over 8 years shipping production interfaces in HTML, CSS, JavaScript, jQuery, Bootstrap, and React. Open to hybrid and remote roles.",
+    "Portfolio of Hansel V. Mejarito Jr., Senior Software Engineer with over 8 years shipping full-stack web apps in HTML, CSS, JavaScript, jQuery, Bootstrap, React, REST APIs, and PHP. Open to hybrid and remote roles.",
   keywords: [
     "Hansel Mejarito",
+    "Senior Software Engineer",
+    "Full-Stack Engineer",
     "Web Engineer",
     "Philippines",
     "HTML",
@@ -40,7 +42,7 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: siteConfig.name }],
   openGraph: {
-    title: "Hansel V. Mejarito Jr. — Web Engineer",
+    title: "Hansel V. Mejarito Jr. — Senior Software Engineer",
     description: siteConfig.tagline,
     type: "website",
     url: siteConfig.website,
@@ -49,7 +51,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Hansel V. Mejarito Jr. — Web Engineer",
+    title: "Hansel V. Mejarito Jr. — Senior Software Engineer",
     description: siteConfig.tagline,
   },
   alternates: {
