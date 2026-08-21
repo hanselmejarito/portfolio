@@ -15,13 +15,13 @@ export function Hero() {
         <Reveal>
           <div className="mb-8 inline-flex items-center gap-2.5 rounded-full border border-emerald-400/20 bg-emerald-400/[0.06] px-4 py-1.5 text-sm text-emerald-300">
             <span className="animate-pulse-dot h-2 w-2 rounded-full bg-emerald-400" />
-            Available for full-time remote work · {siteConfig.location}
+            Open to full-time roles · {siteConfig.location}
           </div>
         </Reveal>
 
         <Reveal delay={100}>
           <h1 className="mb-6 text-5xl font-semibold leading-[1.05] tracking-tight text-white sm:text-6xl lg:text-7xl">
-            Building systems that
+            Building interfaces that
             <br />
             serve a{" "}
             <span className="font-display-italic font-normal text-gradient">

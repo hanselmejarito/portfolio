@@ -9,8 +9,8 @@ export function Skills() {
       <div className="mx-auto max-w-5xl">
         <SectionHeading
           eyebrow="04 — Skills"
-          title="Tools of the"
-          accent="trade."
+          title="The web"
+          accent="stack."
         />
 
         <div className="mt-14 grid gap-5 sm:grid-cols-2">

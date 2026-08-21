@@ -10,7 +10,7 @@ export function Experience() {
         <SectionHeading
           eyebrow="02 — Experience"
           title="Nearly a decade of"
-          accent="shipping."
+          accent="shipping UIs."
         />
 
         <div className="relative mt-14 space-y-10 before:absolute before:left-[5px] before:top-3 before:h-[calc(100%-24px)] before:w-px before:bg-gradient-to-b before:from-accent/40 before:via-white/10 before:to-transparent">

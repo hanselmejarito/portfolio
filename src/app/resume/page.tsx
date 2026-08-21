@@ -2,7 +2,6 @@ import {
   achievements,
   education,
   experience,
-  publicService,
   siteConfig,
 } from "@/lib/data";
 import { ResumeActions } from "@/components/ResumeActions";
@@ -14,28 +13,26 @@ export const metadata = {
 
 export default function ResumePage() {
   const featuredSkills = [
-    "PHP",
-    "CodeIgniter",
+    "HTML",
+    "CSS",
+    "JavaScript",
+    "jQuery",
+    "Bootstrap",
     "React",
     "Next.js",
     "TypeScript",
     "REST APIs",
+    "Git",
+    "PHP",
+    "CodeIgniter",
     "MySQL",
     "Docker",
     "Node.js",
     "Express",
-    "Vercel",
-    "Cursor",
-    "ChatGPT",
-    "Claude",
-    "Gemini",
-    "AI-Assisted Development",
-    "n8n",
-    "Business Analysis",
     "Tailwind CSS",
     "PostgreSQL",
-    "Git",
     "Linux",
+    "Agile",
   ];
 
   return (
@@ -64,12 +61,11 @@ export default function ResumePage() {
             Summary
           </h2>
           <p className="text-sm leading-relaxed text-gray-700">
-            Software engineer with over 8 years building production systems for PPA and NACC —
-            full-stack PHP/CodeIgniter backends, React/Next.js frontends, REST APIs, Docker, and
-            on-premise deployments. Experienced as lead developer, business analyst, and
-            maintainer across nationwide government platforms. Productive daily with Cursor,
-            ChatGPT, Claude, and Gemini for AI-assisted development — accelerating delivery
-            while owning architecture and quality. Seeking full-time remote work.
+            Web engineer with over 8 years shipping production interfaces for PPA and NACC —
+            HTML, CSS, JavaScript, jQuery, and Bootstrap on PHP/CodeIgniter backends, plus
+            React and Next.js on newer work. Experienced as lead developer and maintainer
+            across nationwide web portals, REST APIs, and production systems. Based in the
+            Philippines and open to hybrid or remote full-time roles.
           </p>
         </section>
 
@@ -103,35 +99,34 @@ export default function ResumePage() {
           </h2>
           <ul className="space-y-2 text-sm text-gray-700">
             <li>
-              <strong>PMS</strong> — Nationwide print monitoring (Raspberry Pi + SNMP, Docker)
+              <strong>NACC Citizen&apos;s Charter</strong> — Public kiosk + admin dashboard
+              (jQuery, Bootstrap)
             </li>
             <li>
-              <strong>ECMIS / UAMS</strong> — PPA case management + central SSO hub (Lead
+              <strong>ECMIS</strong> — PPA case management portal and digital forms (Lead
               Developer)
             </li>
             <li>
-              <strong>OTP</strong> — Centralized SMS OTP gateway with API key management
+              <strong>RMM</strong> — Infrastructure monitoring dashboards (Frontend)
             </li>
             <li>
-              <strong>BRS</strong> — Bug reporting with tickets, chat, severity, and FAQ
+              <strong>UAMS / OTP / BRS</strong> — SSO hub, SMS OTP gateway, and bug-reporting
+              portal
             </li>
             <li>
-              <strong>NACC Citizen&apos;s Charter</strong> — Public kiosk + admin dashboard
+              <strong>PMS</strong> — Nationwide print monitoring dashboards (Raspberry Pi +
+              SNMP)
             </li>
             <li>
-              <strong>RCTS</strong> — Speech-to-text transcription platform (BA · Backend)
+              <strong>RCTS</strong> — Speech-to-text platform (BA · Backend for a React
+              frontend)
             </li>
             <li>
-              <strong>KOPIMO Messenger AI Agent</strong> — Serverless Messenger bot (Gemini, Redis,
-              Google Sheets)
+              <strong>Honest Mistake</strong> — Streetwear storefront (React, Next.js)
             </li>
             <li>
-              <strong>Honest Mistake</strong> — Streetwear storefront (Next.js, Vercel) · built with
-              Cursor
-            </li>
-            <li>
-              <strong>ARC Anti Rabies Clinic</strong> — Clinic site with branch directory (Next.js,
-              Vercel) · built with Cursor
+              <strong>ARC Anti Rabies Clinic</strong> — Clinic site with branch directory
+              (React, Next.js)
             </li>
           </ul>
         </section>
@@ -143,18 +138,6 @@ export default function ResumePage() {
           <p className="text-sm leading-relaxed text-gray-700">
             {featuredSkills.join(" · ")}
           </p>
-        </section>
-
-        <section className="mb-8">
-          <h2 className="mb-3 text-sm font-bold uppercase tracking-wider text-gray-500">
-            Public Service
-          </h2>
-          <div className="flex flex-wrap items-baseline justify-between gap-2">
-            <h3 className="text-sm font-semibold">{publicService.role}</h3>
-            <span className="text-sm text-gray-500">{publicService.period}</span>
-          </div>
-          <p className="text-sm text-gray-600">{publicService.org}</p>
-          <p className="mt-1 text-sm text-gray-700">{publicService.note}</p>
         </section>
 
         <section className="mb-8">

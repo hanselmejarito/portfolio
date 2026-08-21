@@ -8,9 +8,9 @@ import type {
 
 export const siteConfig = {
   name: "Hansel V. Mejarito Jr.",
-  title: "Senior Software Engineer",
+  title: "Web Engineer",
   tagline:
-    "Senior engineer with 8+ years building nationwide government systems — SSO hubs, case management, IoT monitoring, and citizen-facing platforms for PPA and NACC.",
+    "Web engineer with 8+ years shipping production interfaces — HTML, CSS, JavaScript, jQuery, Bootstrap, and React — backed by REST APIs for nationwide government platforms.",
   email: "mejarito.hansel20@gmail.com",
   formspree: "https://formspree.io/f/xdaqoqzy",
   linkedin: "https://www.linkedin.com/in/sel-mejarito-1231681b6/",
@@ -19,16 +19,16 @@ export const siteConfig = {
 };
 
 export const stats = [
-  { value: "8+", label: "Years of experience" },
-  { value: "15+", label: "Production systems shipped" },
+  { value: "8+", label: "Years building web apps" },
+  { value: "15+", label: "Production UIs shipped" },
   { value: "2", label: "Government agencies served" },
   { value: "PH-wide", label: "Nationwide deployments" },
 ];
 
 export const about = [
-  "Software engineer with over 8 years of experience delivering production systems for enterprise and government clients in the Philippines — primarily the Parole and Probation Administration (PPA) and the National Authority for Child Care (NACC).",
-  "I build full-stack solutions across PHP/CodeIgniter backends, React and Next.js frontends, REST APIs, Docker deployments, and on-premise infrastructure. Experienced leading handovers, writing requirements, and shipping systems used nationwide.",
-  "Started as a hands-on hardcoder — now I work daily with Cursor, ChatGPT, Claude, and Gemini for AI-assisted development to ship faster while owning architecture, quality, and production systems. Previously Senior Software Engineer at Techsolve Systems Solutions Inc. and Software Engineer at Suiterus Technologies Inc. Looking for full-time remote work.",
+  "Web engineer with over 8 years of experience delivering production web applications for enterprise and government clients in the Philippines — primarily the Parole and Probation Administration (PPA) and the National Authority for Child Care (NACC).",
+  "I build the UI layer in HTML, CSS, and JavaScript — jQuery and Bootstrap for the government portals, React and Next.js on newer work — sitting on REST APIs and PHP/CodeIgniter backends. Experienced owning screens, workflows, and production systems used nationwide.",
+  "Previously Senior Software Engineer at Techsolve Systems Solutions Inc. and Software Engineer at Suiterus Technologies Inc. Based in the Philippines and open to hybrid or remote full-time roles.",
 ];
 
 export const experience: Experience[] = [
@@ -38,9 +38,9 @@ export const experience: Experience[] = [
     period: "Feb 2022 — Jul 2026",
     duration: "4 yrs 5 mos",
     highlights: [
-      "Built PMS (nationwide print monitoring via Raspberry Pi + SNMP), NACC Citizen's Charter, and PPA 50th Anniversary Coffee Table Book",
-      "Lead developer on UAMS, ECMIS, OTP, and BRS — continued development after team handover",
-      "BA and backend on RCTS; contributor on PPIS and PMEIS; maintainer on LAN monitoring",
+      "Shipped production web UIs in HTML, CSS, JavaScript, jQuery, and Bootstrap — NACC Citizen's Charter kiosk, PMS dashboards, and the PPA 50th Anniversary coffee table book",
+      "Lead developer on UAMS, ECMIS, OTP, and BRS — owned the portals, forms, REST APIs, and production upkeep after team handover",
+      "Frontend on RMM dashboards (Chart.js); BA and API work supporting a React frontend on RCTS; contributor on PPIS and PMEIS",
     ],
   },
   {
@@ -49,19 +49,89 @@ export const experience: Experience[] = [
     period: "Nov 2017 — Feb 2022",
     duration: "4 yrs 3 mos",
     highlights: [
-      "Contributor on PMT (Project Management Tool) and Dokyumento (Document Management System) for government clients",
-      "Built and maintained enterprise web applications across the full SDLC",
-      "Worked with cross-functional teams on requirements, development, testing, and deployment",
+      "Built and maintained enterprise web applications with jQuery, Bootstrap, and PHP/CodeIgniter across the full SDLC",
+      "Contributor on PMT and Dokyumento — task, document, and workflow UIs for government and corporate clients",
+      "Worked with cross-functional teams on requirements, UI delivery, testing, and deployment",
     ],
   },
 ];
 
 export const projects: Project[] = [
   {
+    name: "NACC Citizen's Charter System",
+    description:
+      "Public-facing Citizen's Charter for the National Authority for Child Care — lobby kiosk UI plus admin dashboard. jQuery and Bootstrap screens for adoption and foster care services, step-by-step requirements, regional offices, accredited agencies, announcements, organization structure, and citizen feedback with SQD ratings.",
+    tech: [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "jQuery",
+      "Bootstrap",
+      "PHP",
+      "CodeIgniter",
+      "MySQL",
+    ],
+    period: "Feb 2022 — Jul 2026",
+    company: "Techsolve Systems Solutions Inc.",
+    role: "Built",
+    featured: true,
+  },
+  {
+    name: "ECMIS — Expansion Case Management Information System",
+    description:
+      "PPA case-management portal — digital forms (F5, F21, F44, F45, F51, F53), probationer records, community service masterlists, regional and field office quarterly reports, review and approval workflows, backup/restore, and audit trail. jQuery and Bootstrap UI on a CodeIgniter REST API.",
+    tech: [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "jQuery",
+      "Bootstrap",
+      "PHP",
+      "CodeIgniter",
+      "MySQL",
+      "REST API",
+    ],
+    period: "Feb 2022 — Jul 2026",
+    company: "Techsolve Systems Solutions Inc.",
+    role: "Lead Developer",
+    featured: true,
+  },
+  {
+    name: "RMM — Remote Monitoring",
+    description:
+      "Frontend for an IT infrastructure monitoring app — dashboard UI with registered device counts, HDD/SSD and NVMe storage totals, RAM usage, and cluster breakdowns via Chart.js. Built cluster management, notifications, prohibited apps, licensing, and app/service monitoring views in jQuery and Bootstrap.",
+    tech: [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "jQuery",
+      "Bootstrap",
+      "Chart.js",
+      "PHP",
+      "CodeIgniter",
+      "MySQL",
+    ],
+    period: "Feb 2022 — Jul 2026",
+    company: "Techsolve Systems Solutions Inc.",
+    role: "Frontend",
+    featured: true,
+  },
+  {
+    name: "Honest Mistake — Storefront",
+    description:
+      "Streetwear e-commerce for a Manila-based limited-drop clothing brand — product lineup with quick-add sizes, sale pricing, newsletter signup, and multi-payment checkout options (GCash, Maya, COD). Race-mesh collection UI with Filipino/Japanese bilingual branding.",
+    tech: ["HTML", "CSS", "JavaScript", "Next.js", "React", "TypeScript", "Tailwind CSS"],
+    period: "2026",
+    company: "Personal",
+    role: "Built",
+    featured: true,
+    link: "https://hm-worldwide.vercel.app/",
+  },
+  {
     name: "PPA 50th Anniversary — Interactive Coffee Table Book",
     description:
-      "Interactive digital coffee table book commemorating the 50th anniversary of the Parole and Probation Administration (2026) — flipbook-style web experience with embedded multimedia content and a mobile-friendly viewer.",
-    tech: ["HTML", "CSS", "FlipHTML5", "Responsive Design"],
+      "Interactive digital coffee table book commemorating the 50th anniversary of the Parole and Probation Administration (2026) — flipbook-style web experience with embedded multimedia and a mobile-friendly viewer.",
+    tech: ["HTML", "CSS", "JavaScript", "FlipHTML5", "Responsive Design"],
     period: "2026",
     company: "Techsolve Systems Solutions Inc.",
     role: "Built",
@@ -71,48 +141,60 @@ export const projects: Project[] = [
   {
     name: "PMS — Print Monitoring System",
     description:
-      "Nationwide print monitoring platform where all regional offices with printers report metrics to a central office. Raspberry Pi devices at each region handle SNMP polling and forward data upstream — with department scoping, role-based access, and real-time dashboards at headquarters.",
-    tech: ["PHP 8", "CodeIgniter 3", "MySQL", "Docker", "SNMP", "Raspberry Pi", "Bootstrap"],
+      "Nationwide print monitoring platform where regional offices report printer metrics to a central office. Raspberry Pi devices poll via SNMP and forward data upstream — department scoping, role-based access, and real-time dashboards at headquarters built with jQuery and Bootstrap.",
+    tech: [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "jQuery",
+      "Bootstrap",
+      "PHP 8",
+      "CodeIgniter 3",
+      "MySQL",
+      "Docker",
+      "SNMP",
+      "Raspberry Pi",
+    ],
     period: "2023 — Jul 2026",
     company: "Techsolve Systems Solutions Inc.",
     role: "Built",
-    featured: true,
-  },
-  {
-    name: "ECMIS — Expansion Case Management Information System",
-    description:
-      "PPA Expansion Case Management Information System (CodeIgniter portal + REST API) for probation and parole caseload operations — digital forms (F5, F21, F44, F45, F51, F53), probationer records, community service masterlists, regional and field office quarterly reports, form review and approval workflows, backup/restore, and audit trail.",
-    tech: ["PHP", "CodeIgniter", "MySQL", "REST API", "Bootstrap", "jQuery"],
-    period: "Feb 2022 — Jul 2026",
-    company: "Techsolve Systems Solutions Inc.",
-    role: "Lead Developer",
-    featured: true,
+    featured: false,
   },
   {
     name: "UAMS — Unified Access Management Solution",
     description:
-      "PPA central SSO and user management hub (ppa_sso database) — single login integrated with the central OTP service, user enrollment across PPA information systems (ECMIS, RCTS, BRS, LAN, and others), role-based access by field office and user level, information system registry with SSO status dashboard, and audit trail.",
-    tech: ["PHP", "CodeIgniter", "MySQL", "REST API", "SSO", "Bootstrap"],
+      "PPA central SSO and user-management hub — single login with the central OTP service, user enrollment across PPA systems (ECMIS, RCTS, BRS, LAN, and others), role-based access by field office and user level, information system registry with SSO status dashboard, and audit trail. jQuery and Bootstrap portal on a REST API.",
+    tech: [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "jQuery",
+      "Bootstrap",
+      "PHP",
+      "CodeIgniter",
+      "MySQL",
+      "REST API",
+      "SSO",
+    ],
     period: "Feb 2022 — Jul 2026",
     company: "Techsolve Systems Solutions Inc.",
     role: "Lead Developer",
-    featured: true,
-  },
-  {
-    name: "NACC Citizen's Charter System",
-    description:
-      "Citizen's Charter platform for the National Authority for Child Care (NACC) — public lobby kiosk plus admin dashboard. Covers adoption and foster care services, step-by-step requirements, regional offices, accredited agencies, announcements, organization structure, and citizen feedback with SQD ratings.",
-    tech: ["PHP", "CodeIgniter", "MySQL", "Bootstrap", "Kiosk UI"],
-    period: "Feb 2022 — Jul 2026",
-    company: "Techsolve Systems Solutions Inc.",
-    role: "Built",
-    featured: true,
+    featured: false,
   },
   {
     name: "RCTS — Report Collaboration Transcription System",
     description:
-      "Report collaboration and speech-to-text transcription platform for the Parole and Probation Administration. Business analyst and backend developer on the CodeIgniter API — requirements gathering, speech processing integration, data persistence, and REST endpoints supporting the React frontend.",
-    tech: ["PHP", "CodeIgniter", "MySQL", "REST API", "React"],
+      "Report collaboration and speech-to-text transcription platform for PPA. Business analyst and backend developer on the CodeIgniter API — requirements gathering, speech processing integration, data persistence, and REST endpoints supporting the React frontend.",
+    tech: [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "React",
+      "PHP",
+      "CodeIgniter",
+      "MySQL",
+      "REST API",
+    ],
     period: "Feb 2022 — Jul 2026",
     company: "Techsolve Systems Solutions Inc.",
     role: "BA · Backend",
@@ -121,8 +203,19 @@ export const projects: Project[] = [
   {
     name: "OTP — One Time Password System",
     description:
-      "Centralized SMS OTP gateway for PPA (CodeIgniter admin portal + REST API) — API Key Manager registers per-information-system keys with generated hashes, IP whitelist, and activate/deactivate controls. Integrated apps (UAMS, ECMIS, and others) call the API with their key to queue OTP messages; SMS Manager tracks each message with Pending, Delivered, or Cancelled status, scheduled send time, delivery timestamp, and CSV/PDF/Excel export.",
-    tech: ["PHP", "CodeIgniter", "MySQL", "REST API", "Bootstrap", "SMS Gateway"],
+      "Centralized SMS OTP gateway for PPA — admin portal plus REST API. API Key Manager registers per-system keys with generated hashes, IP whitelist, and activate/deactivate controls. Integrated apps call the API to queue OTP messages; SMS Manager tracks Pending, Delivered, or Cancelled status with scheduled send time, delivery timestamp, and CSV/PDF/Excel export.",
+    tech: [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "jQuery",
+      "Bootstrap",
+      "PHP",
+      "CodeIgniter",
+      "MySQL",
+      "REST API",
+      "SMS Gateway",
+    ],
     period: "Feb 2022 — Jul 2026",
     company: "Techsolve Systems Solutions Inc.",
     role: "Lead Developer",
@@ -131,28 +224,38 @@ export const projects: Project[] = [
   {
     name: "BRS — Bug Reporting System",
     description:
-      "PPA internal bug reporting platform (CodeIgniter portal + REST API) with SSO login — ticket dashboard with category, severity, assignee, and status tracking; severity and category managers; admin-user chat for ticket follow-up; FAQ manager; ticket attachments and assignment; CSV/PDF/Excel export; audit trail and backup/restore.",
-    tech: ["PHP", "CodeIgniter", "MySQL", "REST API", "SSO", "Bootstrap"],
+      "PPA internal bug-reporting portal with SSO login — ticket dashboard with category, severity, assignee, and status; severity and category managers; admin-user chat for follow-up; FAQ manager; attachments and assignment; CSV/PDF/Excel export; audit trail and backup/restore. jQuery and Bootstrap UI.",
+    tech: [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "jQuery",
+      "Bootstrap",
+      "PHP",
+      "CodeIgniter",
+      "MySQL",
+      "REST API",
+      "SSO",
+    ],
     period: "Feb 2022 — Jul 2026",
     company: "Techsolve Systems Solutions Inc.",
     role: "Lead Developer",
     featured: false,
   },
   {
-    name: "RMM — Remote Monitoring",
-    description:
-      "Remote monitoring and management web application for IT infrastructure — dashboard UI showing registered device counts, HDD/SSD and NVMe storage totals, RAM usage, and cluster breakdowns via Chart.js bar graphs. Frontend development on cluster management, notifications, prohibited apps, licensing, and app/service monitoring views.",
-    tech: ["PHP", "CodeIgniter", "Bootstrap", "jQuery", "Chart.js", "MySQL"],
-    period: "Feb 2022 — Jul 2026",
-    company: "Techsolve Systems Solutions Inc.",
-    role: "Frontend",
-    featured: false,
-  },
-  {
     name: "PPIS — Probation and Parole Information System",
     description:
-      "Core information system for probation and parole records, case data, and reporting workflows across PPA field offices. Contributed to feature development and maintenance on the CodeIgniter-based platform.",
-    tech: ["PHP", "CodeIgniter", "MySQL", "Bootstrap"],
+      "Core information system for probation and parole records, case data, and reporting workflows across PPA field offices. Contributed to feature development and maintenance on the jQuery, Bootstrap, and CodeIgniter platform.",
+    tech: [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "jQuery",
+      "Bootstrap",
+      "PHP",
+      "CodeIgniter",
+      "MySQL",
+    ],
     period: "Feb 2022 — Jul 2026",
     company: "Techsolve Systems Solutions Inc.",
     role: "Contributor",
@@ -161,8 +264,17 @@ export const projects: Project[] = [
   {
     name: "PMEIS — Performance Monitoring and Evaluation Information System",
     description:
-      "Performance monitoring and evaluation system for tracking outcomes and metrics across probation and parole operations. Contributed to modules for data entry, reporting, and system maintenance.",
-    tech: ["PHP", "CodeIgniter", "MySQL", "Bootstrap"],
+      "Performance monitoring and evaluation system for tracking outcomes and metrics across probation and parole operations. Contributed to data-entry screens, reporting views, and system maintenance.",
+    tech: [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "jQuery",
+      "Bootstrap",
+      "PHP",
+      "CodeIgniter",
+      "MySQL",
+    ],
     period: "Feb 2022 — Jul 2026",
     company: "Techsolve Systems Solutions Inc.",
     role: "Contributor",
@@ -171,8 +283,18 @@ export const projects: Project[] = [
   {
     name: "LAN Ports, Access Points and Switches Monitoring System",
     description:
-      "Network infrastructure monitoring for LAN ports, wireless access points, and switches across PPA offices. Took over as maintainer — SNMP-based polling, status dashboards, and ongoing system upkeep after original developer departure.",
-    tech: ["PHP", "CodeIgniter", "MySQL", "SNMP", "Bootstrap"],
+      "Network infrastructure monitoring for LAN ports, wireless access points, and switches across PPA offices. Took over as maintainer — SNMP polling, status dashboards in jQuery and Bootstrap, and ongoing system upkeep after the original developer left.",
+    tech: [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "jQuery",
+      "Bootstrap",
+      "PHP",
+      "CodeIgniter",
+      "MySQL",
+      "SNMP",
+    ],
     period: "Feb 2022 — Jul 2026",
     company: "Techsolve Systems Solutions Inc.",
     role: "Maintainer",
@@ -181,8 +303,17 @@ export const projects: Project[] = [
   {
     name: "PMT — Project Management Tool",
     description:
-      "Enterprise project management platform for tracking tasks, milestones, and team workflows across government and corporate engagements at Suiterus.",
-    tech: ["PHP", "CodeIgniter", "MySQL", "Bootstrap"],
+      "Enterprise project management platform for tracking tasks, milestones, and team workflows across government and corporate engagements at Suiterus — jQuery and Bootstrap UI on PHP/CodeIgniter.",
+    tech: [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "jQuery",
+      "Bootstrap",
+      "PHP",
+      "CodeIgniter",
+      "MySQL",
+    ],
     period: "2017 — 2022",
     company: "Suiterus Technologies Inc.",
     role: "Contributor",
@@ -191,17 +322,46 @@ export const projects: Project[] = [
   {
     name: "Dokyumento — Document Management System",
     description:
-      "Document management system for storing, organizing, and retrieving institutional files with role-based access, version tracking, and audit trails for enterprise clients.",
-    tech: ["PHP", "CodeIgniter", "MySQL", "Bootstrap"],
+      "Document management system for storing, organizing, and retrieving institutional files with role-based access, version tracking, and audit trails — jQuery and Bootstrap screens for enterprise clients.",
+    tech: [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "jQuery",
+      "Bootstrap",
+      "PHP",
+      "CodeIgniter",
+      "MySQL",
+    ],
     period: "2017 — 2022",
     company: "Suiterus Technologies Inc.",
     role: "Contributor",
     featured: false,
   },
   {
+    name: "ARC Anti Rabies Clinic — Website",
+    description:
+      "Live site for an anti-rabies clinic chain with 11 branches across Nueva Ecija and Tarlac — services catalog, first-aid guide, searchable branch directory with filters, FAQ, and contact form with branch selection.",
+    tech: [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "Next.js",
+      "React",
+      "TypeScript",
+      "Leaflet",
+      "Formspree",
+    ],
+    period: "2026",
+    company: "Personal",
+    role: "Built",
+    featured: false,
+    link: "https://arcantirabisclinic.vercel.app/",
+  },
+  {
     name: "KOPIMO — Messenger AI Agent",
     description:
-      "Serverless Facebook Messenger assistant for a coffee shop — answers strictly from a file-based knowledge base (menu, hours, FAQ), collects Take-out/Pick-up orders in chat, saves draft rows to Google Sheets (Pending Confirmation) so counter staff can see orders before the customer says yes, then confirms to Pending Pickup. Built as a typed replacement for an n8n workflow: Gemini function calling, Upstash Redis memory/dedupe/rate limits, Meta webhook signature verification, and Vercel waitUntil async processing.",
+      "Serverless Facebook Messenger assistant for a coffee shop — answers from a file-based knowledge base (menu, hours, FAQ), collects Take-out/Pick-up orders in chat, saves draft rows to Google Sheets so counter staff can review before confirmation, then confirms to Pending Pickup. Gemini function calling, Upstash Redis memory/dedupe/rate limits, Meta webhook signature verification, and Vercel waitUntil async processing.",
     tech: [
       "Node.js",
       "Express",
@@ -219,32 +379,18 @@ export const projects: Project[] = [
     link: "https://github.com/hanselmejarito/coffeeaiagent",
   },
   {
-    name: "Honest Mistake — Storefront",
-    description:
-      "Streetwear e-commerce for a Manila-based limited-drop clothing brand — product lineup with quick-add sizes, sale pricing, newsletter signup, and multi-payment checkout options (GCash, Maya, COD). Race-mesh collection UI with Filipino/Japanese bilingual branding. Built with Cursor.",
-    tech: ["Next.js", "React", "TypeScript", "Tailwind CSS", "Cursor"],
-    period: "2026",
-    company: "Personal",
-    role: "Built with Cursor",
-    featured: false,
-    link: "https://hm-worldwide.vercel.app/",
-  },
-  {
-    name: "ARC Anti Rabies Clinic — Website",
-    description:
-      "Live site for an anti-rabies clinic chain with 11 branches across Nueva Ecija and Tarlac — services catalog, first-aid guide, searchable branch directory with filters, FAQ, and contact form with branch selection. Built with Cursor.",
-    tech: ["Next.js", "React", "TypeScript", "CSS", "Leaflet", "Formspree", "Cursor"],
-    period: "2026",
-    company: "Personal",
-    role: "Built with Cursor",
-    featured: false,
-    link: "https://arcantirabisclinic.vercel.app/",
-  },
-  {
     name: "n8n — Social Media & AI Automations",
     description:
       "Three self-hosted n8n workflows on Docker: (1) automated weather updates posted to a Facebook page; (2) video pipeline from Google Drive to Facebook and YouTube; (3) Facebook Messenger AI assistant prototype (later rebuilt as the typed KOPIMO Messenger AI Agent on Vercel).",
-    tech: ["n8n", "Docker", "PostgreSQL", "Facebook API", "YouTube API", "Google Drive", "AI"],
+    tech: [
+      "n8n",
+      "Docker",
+      "PostgreSQL",
+      "Facebook API",
+      "YouTube API",
+      "Google Drive",
+      "AI",
+    ],
     period: "2026",
     company: "Personal",
     role: "Built",
@@ -255,28 +401,34 @@ export const projects: Project[] = [
 export const skills: SkillCategory[] = [
   {
     category: "Frontend",
-    items: ["React", "Next.js", "TypeScript", "Tailwind CSS", "Bootstrap", "jQuery"],
-  },
-  {
-    category: "Backend",
-    items: ["PHP", "CodeIgniter", "Node.js", "Express", "REST APIs", "MySQL", "PostgreSQL"],
-  },
-  {
-    category: "DevOps & Tools",
-    items: ["Docker", "Docker Compose", "Vercel", "Git", "Linux", "SNMP"],
-  },
-  {
-    category: "AI & Automation",
     items: [
-      "Cursor",
-      "ChatGPT",
-      "Claude",
-      "Gemini",
-      "AI-Assisted Development",
-      "n8n",
-      "Workflow Automation",
-      "Business Analysis",
-      "Requirements Gathering",
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "jQuery",
+      "Bootstrap",
+      "React",
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+    ],
+  },
+  {
+    category: "Backend & APIs",
+    items: ["REST APIs", "PHP", "CodeIgniter", "Node.js", "Express", "MySQL", "PostgreSQL"],
+  },
+  {
+    category: "Delivery",
+    items: ["Git", "Docker", "Docker Compose", "Linux", "Vercel", "Agile"],
+  },
+  {
+    category: "Practices",
+    items: [
+      "Production ownership",
+      "Code reviews",
+      "Requirements gathering",
+      "Business analysis",
+      "Responsive UI",
     ],
   },
 ];
@@ -338,13 +490,6 @@ export const education: Education[] = [
     note: "University Intramurals Chess Champion Overall (2014)",
   },
 ];
-
-export const publicService = {
-  role: "SK Kagawad — Sangguniang Kabataan Councilor",
-  org: "Barangay St. Joseph, City of San Juan, Metro Manila",
-  period: "Jul 2018 — Nov 2023",
-  note: "Elected youth council member — served a full five-year term in local government",
-};
 
 export const navLinks = [
   { href: "#about", label: "About" },

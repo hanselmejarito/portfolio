@@ -151,8 +151,8 @@ export function Projects({ projects }: { projects: Project[] }) {
         <SectionHeading
           eyebrow="03 — Work"
           title="Selected"
-          accent="systems."
-          description="Nationwide platforms for the Parole and Probation Administration and the National Authority for Child Care — described by scope and technology, not source code."
+          accent="interfaces."
+          description="Production web UIs for the Parole and Probation Administration and the National Authority for Child Care — jQuery and Bootstrap on PHP backends, plus React and Next.js on newer work."
         />
 
         <div className="mt-14 grid gap-6 md:grid-cols-2">
